@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Font
+   ========================================================================== */
+h1, p, a, .btn, .chip {
+    font-family: 'Inter', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.chip {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+/* Implementation
+   ========================================================================== */
+
+/* Bold */
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/font/Inter/static/Inter-Bold.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/font/Inter/static/Inter-Medium.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/font/Inter/static/Inter-Regular.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/font/Inter/static/Inter-Thin.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 100;
+}

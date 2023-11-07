@@ -1,0 +1,170 @@
+/* ==========================================================================
+   reset all
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    /* other */
+    background-color: #e8e8e8;
+}
+
+
+/* ==========================================================================
+   elements
+   ========================================================================== */
+
+main {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    /* other */
+    background-color: #fff;
+}
+
+aside {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.action-btn, .category-btn, .reaction-btn {
+    /* display & box model */
+    display: flex;
+    padding: 0.5rem 1rem;
+    /* other */
+    border: none;
+    border-radius: 2rem;
+    
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.action-btn {
+    /* other */
+    background-color: #000;
+    color: #fff;
+}
+
+.action-btn:hover {
+    /* other */
+    opacity: 0.8;
+}
+
+.category-btn {
+    /* display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* other */
+    background-color: #bde0fe;
+    color: #fff;
+}
+
+.reaction-btn {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+a {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    /* other */
+    color: #999999;
+    text-decoration: none;
+}
+
+ul {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* other */
+    list-style-type: none;
+}
+
+.post {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    /* other */
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 
+                0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+.chip {
+    /* display & box model */
+    display: flex;
+    padding: 0.5rem 1rem;
+    /* other */
+    background-color: #bde0fe;
+    border: none;
+    border-radius: 2rem;
+}
+
+
+
+/* ==========================================================================
+   layout
+   ========================================================================== */
+
+.row-1rem {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.row-space-between {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-16x16 {
+    /* display & box model */
+    width: 1rem;
+    height: 1rem;
+}
