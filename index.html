@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="font.css">
     <title>That's a fact!</title>
 </head>
-<body>
 
+<body>
 <!-- header -->
-<header>
+<header class="header">
     <div class="row-1rem">
         <img src="./assets/icons/sms_FILL0_wght400_GRAD0_opsz24.svg" alt="that's a fact logo">
         <h1>That's a fact!</h1>
@@ -20,7 +20,7 @@
 </header>
 
 <!-- main -->
-<main>
+<main class="main">
 
     <!-- form -->
     <form action="">
@@ -35,48 +35,49 @@
         <button class="action-btn btn">Post</button>
     </form>
 
-    <!-- sidebar button -->
-    <aside>
-        <ul>
-            <li><button class="category-btn btn">All</button></li>
-            <li><button class="category-btn btn">Technology</button></li>
-        </ul>
-    </aside>
+    <!-- grid -->
+    <div class="grid">
+        <!-- sidebar button -->
+        <aside class="aside">
+            <ul>
+                <li><button class="category-btn btn">All</button></li>
+                <li><button class="category-btn btn">Technology</button></li>
+            </ul>
+        </aside>
 
-    <!-- facts-->
-    <section>
-        <ul>
-            <li class="post">
-                <p>React is being developed by Meta (formerly facebook).</p>
-                <a href="http://opensource.fb.com/" target="_blank">source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
-                <div class="row-space-between">
-                    <div class="chip">technology</div>
-                    <div class="row-1rem">
-                        <button class="reaction-btn">👍 <strong>24</strong></button>
-                        <button class="reaction-btn">🤯 <strong>9</strong></button>
-                        <button class="reaction-btn">⛔️ <strong>4</strong></button>
+        <!-- facts-->
+        <section class="section">
+            <ul>
+                <li class="post">
+                    <p>React is being developed by Meta (formerly facebook).</p>
+                    <a href="http://opensource.fb.com/" target="_blank">source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
+                    <div class="row-space-between">
+                        <div class="chip">technology</div>
+                        <div class="row-1rem">
+                            <button class="reaction-btn">👍 <strong>24</strong></button>
+                            <button class="reaction-btn">🤯 <strong>9</strong></button>
+                            <button class="reaction-btn">⛔️ <strong>4</strong></button>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
 
-        <ul>
-            <li class="post">
-                <p>React is being developed by Meta (formerly facebook).</p>
-                <a href="http://opensource.fb.com/" target="_blank">source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
-                <div class="row-space-between">
-                    <div class="chip">technology</div>
-                    <div class="row-1rem">
-                        <button class="reaction-btn">👍 <strong>24</strong></button>
-                        <button class="reaction-btn">🤯 <strong>9</strong></button>
-                        <button class="reaction-btn">⛔️ <strong>4</strong></button>
+            <ul>
+                <li class="post">
+                    <p>React is being developed by Meta (formerly facebook).</p>
+                    <a href="http://opensource.fb.com/" target="_blank">source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
+                    <div class="row-space-between">
+                        <div class="chip">technology</div>
+                        <div class="row-1rem">
+                            <button class="reaction-btn">👍 <strong>24</strong></button>
+                            <button class="reaction-btn">🤯 <strong>9</strong></button>
+                            <button class="reaction-btn">⛔️ <strong>4</strong></button>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-
-        
-    </section>
+                </li>
+            </ul>
+        </section>
+    </div>
 
 </main>
 
