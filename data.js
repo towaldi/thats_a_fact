@@ -39,3 +39,23 @@ const initialFacts = [
         createdIn: 2019
     },
 ];
+
+
+
+/**
+ * Load data form supabase
+ */
+
+/*
+async function loadFacts() {
+    const res = fetch('https://yfxldwvaqefsjuwavahh.supabase.c/rest/v1/facts', {
+    headers: {
+        apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlmeGxkd3ZhcWVmc2p1d2F2YWhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkzNzMyNDEsImV4cCI6MjAxNDk0OTI0MX0.l6sI5xiVw5G5Bh_cVw8tQXVvwzCpfutBaA8QO61BRKA',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlmeGxkd3ZhcWVmc2p1d2F2YWhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkzNzMyNDEsImV4cCI6MjAxNDk0OTI0MX0.l6sI5xiVw5G5Bh_cVw8tQXVvwzCpfutBaA8QO61BRKA',
+        },
+    });
+
+    const data = await (await res).json();
+    console.log(res);
+}
+*/
