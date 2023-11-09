@@ -16,14 +16,14 @@
         <img src="./assets/icons/sms_FILL0_wght400_GRAD0_opsz24.svg" alt="that's a fact logo">
         <h1>That's a fact!</h1>
     </div>
-    <button class="action-btn btn">Share a fact</button>
+    <button id="open-form-btn" class="action-btn btn">Share a fact</button>
 </header>
 
 <!-- main -->
 <main class="main">
 
     <!-- form -->
-    <form action="">
+    <form class="form d-none" action="">
         <input type="text" placeholder="Share a fact with the world...">
         <span>200</span>
         <input type="text" placeholder="Trustworthy source...">
@@ -50,7 +50,7 @@
             <ul>
                 <li class="post">
                     <p>React is being developed by Meta (formerly facebook).</p>
-                    <a href="http://opensource.fb.com/" target="_blank">source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
+                    <a href="http://opensource.fb.com/" target="_blank">Source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
                     <div class="row-space-between">
                         <div class="chip">technology</div>
                         <div class="row-1rem">
@@ -65,7 +65,7 @@
             <ul>
                 <li class="post">
                     <p>React is being developed by Meta (formerly facebook).</p>
-                    <a href="http://opensource.fb.com/" target="_blank">source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
+                    <a href="http://opensource.fb.com/" target="_blank">Source<img class="icon-16x16" src="./assets/icons/link_arrow.svg" alt="link arrow"></a>
                     <div class="row-space-between">
                         <div class="chip">technology</div>
                         <div class="row-1rem">
@@ -79,6 +79,9 @@
         </section>
     </div>
 
+    <!-- link js -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
 </main>
 
 </body>

@@ -44,13 +44,44 @@ body {
     width: 100%;
 }
 
+.form {
+    /* disply 6 box model */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    /* other */
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.form input, 
+.form select {
+    /* disply 6 box model */
+    padding: 0.5rem 1rem;
+    /* other */
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 1rem;
+}
+
+.form input::placeholder {
+    color: #999999;
+}
+
+.form input:first-child {
+    /* display */
+    flex-grow: 1;
+}
+
 .grid {
     /* display & box model */
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 1rem;
     width: 60%;
-    /* other */
 }
 
 .aside {
@@ -100,6 +131,11 @@ body {
     color: #fff;
 }
 
+.category-btn:hover {
+    /* other */
+    opacity: 0.8;
+}
+
 .reaction-btn {
     /* display & box model */
     display: flex;
@@ -108,7 +144,12 @@ body {
     gap: 0.5rem;
 }
 
-a {
+.reaction-btn:hover {
+    /* other */
+    opacity: 0.8;
+}
+
+a:link, a:visited {
     /* display & box model */
     display: flex;
     flex-direction: row;
@@ -116,7 +157,14 @@ a {
     gap: 0.25rem;
     /* other */
     color: #999999;
+    cursor: pointer;
     text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+a:hover, a:active {
+    /* other */
+    opacity: 0.8;
 }
 
 ul {
@@ -181,6 +229,15 @@ ul {
 }
 
 
+/* ==========================================================================
+   effects
+   ========================================================================== */
+
+.d-none {
+    display: none;
+}
+
+
 
 /* ==========================================================================
    Responsivness
@@ -189,6 +246,24 @@ ul {
 @media screen and (max-width: 1200px) {
     .grid {
         /* display & box model */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .form {
+        /* disply 6 box model */
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .grid {
+        /* display & box model */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
         width: 100%;
     }
 }
